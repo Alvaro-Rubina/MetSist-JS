@@ -2,12 +2,32 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/morty.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/svg/rick.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rick & Morty</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <main class="main__container">
+      <div class="main__content">
+        <section id="characters" class="characters__container">
+
+          <h2>Personajes de Rick y Morty</h2>
+          <input type="text" id="searchInput" class="input__search" placeholder="Buscar personaje" />
+          <div class="grid__characters" id="characterGrid"></div>
+  
+          <div class="pagination__container">
+            <button id="prevPage" class="pagination__button">Anterior</button>
+            <span id="pageInfo" class="pagination__info">Página 1</span>
+            <button id="nextPage" class="pagination__button">Siguiente</button>
+          </div>
+          
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
